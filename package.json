@@ -1,0 +1,30 @@
+{
+  "name": "gustavocoimbra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass --watch dev/scss/main.scss:dist/css/main.min.css --style=compressed",
+    "js:watch": "chokidar 'dev/js/main.js' -c 'terser dev/js/main.js -c -m -o dist/js/main.min.js'",
+    "img:watch": "chokidar 'dev/img/*' -c 'imagemin dev/img/* --out-dir=dist/img'",
+    "dev": "npm install && concurrently \"npm run sass:watch\" \"npm run js:watch\" \"npm run img:watch\"",
+    "publish": "git add . && git pull && git commit -m 'gustavocoimbra' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavocoimbradev/gustavocoimbra.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavocoimbradev/gustavocoimbra/issues"
+  },
+  "homepage": "https://github.com/gustavocoimbradev/gustavocoimbra#readme",
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^9.1.2",
+    "imagemin-cli": "^8.0.0",
+    "sass": "^1.89.0",
+    "terser": "^5.39.2"
+  }
+}

@@ -12,7 +12,3 @@
 ## Parar o projeto
 
 docker-compose down
-
----
-
-Pronto, é só isso para rodar o WordPress no Docker.

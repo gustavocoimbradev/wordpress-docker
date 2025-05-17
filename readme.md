@@ -1,6 +1,6 @@
 # 🚀 WP - Gustavo Coimbra
 
-Este repositório contém a configuração para rodar o projeto WordPress localmente utilizando Docker e Docker Compose.
+Siga as orientações abaixo para rodar o projeto no seu ambiente.
 
 ---
 
@@ -15,11 +15,9 @@ Para rodar este projeto, certifique-se de ter instalado em sua máquina:
 
 Siga os passos abaixo para subir o ambiente local:
 
-1.  Abra o terminal e navegue até a pasta raiz do projeto onde se encontra o arquivo `docker-compose.yml`.
-    ```bash
-    cd /caminho/para/seu/projeto
-    ```
-2.  Execute o comando Docker Compose para construir (se necessário) e iniciar os serviços em segundo plano (`-d`).
+1.  Abra o terminal e navegue até a pasta do projeto.
+   
+2.  Execute o comando Docker Compose para construir e iniciar os serviços em segundo plano.
     ```bash
     docker-compose up -d
     ```
@@ -28,7 +26,7 @@ Siga os passos abaixo para subir o ambiente local:
     ```
     http://localhost:8080
     ```
-    **(Nota:** A porta pode variar dependendo da configuração no seu `docker-compose.yml`)
+    **(Nota:** Caso haja conflito de portas altere-a no arquivo `docker-compose.yml`)
 
 ## ⏹️ Como Parar o Projeto
 

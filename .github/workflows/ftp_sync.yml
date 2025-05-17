@@ -20,4 +20,4 @@ jobs:
         local-dir: ./wp-content/themes/gustavocoimbra/
         server-dir: ./wordpress/wp-content/themes/gustavocoimbra/
         state-name: .ftp-deploy-sync-themes.json
-        dangerous-clean-slate: false 
+        dangerous-clean-slate: false  

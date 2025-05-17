@@ -1,4 +1,4 @@
-# Projeto WordPress com Docker
+# WP - Gustavo Coimbra
 
 ## Como rodar
 

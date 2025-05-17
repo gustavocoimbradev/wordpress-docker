@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gustavocoimbradev/gustavocoimbra.git"
+    "url": "git+https://github.com/gustavocoimbradev/wordpress-theme-gustavocoimbra.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gustavocoimbradev/gustavocoimbra/issues"
+    "url": "https://github.com/gustavocoimbradev/wordpress-theme-gustavocoimbra/issues"
   },
-  "homepage": "https://github.com/gustavocoimbradev/gustavocoimbra#readme",
+  "homepage": "https://github.com/gustavocoimbradev/wordpress-theme-gustavocoimbra#readme",
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
     "concurrently": "^9.1.2",

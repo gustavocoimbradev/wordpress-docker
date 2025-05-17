@@ -4,22 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass:watch": "sass --watch dev/scss/main.scss:dist/css/main.min.css --style=compressed",
-    "js:watch": "chokidar 'dev/js/main.js' -c 'terser dev/js/main.js -c -m -o dist/js/main.min.js'",
-    "img:watch": "chokidar 'dev/img/*' -c 'imagemin dev/img/* --out-dir=dist/img'",
-    "dev": "cd wp-content/themes/gustavocoimbra/ && npm install && concurrently \"npm run sass:watch\" \"npm run js:watch\" \"npm run img:watch\"",
+    "sass:watch": "sass --watch wp-content/themes/gustavocoimbra/dev/scss/main.scss:wp-content/themes/gustavocoimbra/dist/css/main.min.css --style=compressed",
+    "js:watch": "chokidar 'wp-content/themes/gustavocoimbra/dev/js/main.js' -c 'terser wp-content/themes/gustavocoimbra/dev/js/main.js -c -m -o wp-content/themes/gustavocoimbra/dist/js/main.min.js'",
+    "img:watch": "chokidar 'wp-content/themes/gustavocoimbra/dev/img/*' -c 'imagemin wp-content/themes/gustavocoimbra/dev/img/* --out-dir=wp-content/themes/gustavocoimbra/dist/img'",
+    "dev": "npm install && concurrently \"npm run sass:watch\" \"npm run js:watch\" \"npm run img:watch\"",
     "publish": "git add . && git pull && git commit -m 'gustavocoimbra' && git push"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gustavocoimbradev/gustavocoimbra.git"
+    "url": "git+https://github.com/gustavocoimbrawp-content/themes/gustavocoimbra/dev/gustavocoimbra.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gustavocoimbradev/gustavocoimbra/issues"
+    "url": "https://github.com/gustavocoimbrawp-content/themes/gustavocoimbra/dev/gustavocoimbra/issues"
   },
-  "homepage": "https://github.com/gustavocoimbradev/gustavocoimbra#readme",
+  "homepage": "https://github.com/gustavocoimbrawp-content/themes/gustavocoimbra/dev/gustavocoimbra#readme",
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
     "concurrently": "^9.1.2",

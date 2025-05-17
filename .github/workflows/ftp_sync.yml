@@ -1,0 +1,23 @@
+name: FTP Sync
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Theme Sync
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.1
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./wp-content/themes/gustavocoimbra/
+        remote-dir: ./wp-content/themes/gustavocoimbra/
+        state-name: .ftp-deploy-sync-themes.json
+        dangerous-clean-slate: false

@@ -7,7 +7,7 @@
     "sass:watch": "sass --watch dev/scss/main.scss:dist/css/main.min.css --style=compressed",
     "js:watch": "chokidar 'dev/js/main.js' -c 'terser dev/js/main.js -c -m -o dist/js/main.min.js'",
     "img:watch": "chokidar 'dev/img/*' -c 'imagemin dev/img/* --out-dir=dist/img'",
-    "dev": "npm install && concurrently \"npm run sass:watch\" \"npm run js:watch\" \"npm run img:watch\"",
+    "dev": "cd wp-content/themes/gustavocoimbra/ && npm install && concurrently \"npm run sass:watch\" \"npm run js:watch\" \"npm run img:watch\"",
     "publish": "git add . && git pull && git commit -m 'gustavocoimbra' && git push"
   },
   "repository": {

@@ -1,14 +1,41 @@
-# WP - Gustavo Coimbra
+Okay, vamos melhorar esse arquivo Markdown para deixá-lo mais claro e apresentável. Vou adicionar uma pequena introdução, usar formatação para destacar os comandos e estruturar melhor as seções.
+Markdown
 
-## Como rodar
+# 🚀 WP - Gustavo Coimbra
 
-1. Tenha Docker e Docker Compose instalados.
-2. Entre na pasta do projeto com o `docker-compose.yml`.
-3. Rode:
-   docker-compose up -d
-4. Acesse no navegador:
-   http://localhost:8080
+Este repositório contém a configuração para rodar o projeto WordPress localmente utilizando Docker e Docker Compose.
 
-## Parar o projeto
+---
 
+## 📋 Pré-requisitos
+
+Para rodar este projeto, certifique-se de ter instalado em sua máquina:
+
+* [Docker](https://www.docker.com/get-started/)
+* [Docker Compose](https://docs.docker.com/compose/install/)
+
+## ▶️ Como Iniciar o Projeto
+
+Siga os passos abaixo para subir o ambiente local:
+
+1.  Abra o terminal e navegue até a pasta raiz do projeto onde se encontra o arquivo `docker-compose.yml`.
+    ```bash
+    cd /caminho/para/seu/projeto
+    ```
+2.  Execute o comando Docker Compose para construir (se necessário) e iniciar os serviços em segundo plano (`-d`).
+    ```bash
+    docker-compose up -d
+    ```
+3.  Aguarde alguns instantes até que os serviços estejam totalmente iniciados.
+4.  Acesse o projeto no seu navegador web:
+    ```
+    http://localhost:8080
+    ```
+    **(Nota:** A porta pode variar dependendo da configuração no seu `docker-compose.yml`)
+
+## ⏹️ Como Parar o Projeto
+
+Para desligar e remover os contêineres criados pelo Docker Compose, execute o seguinte comando na raiz do projeto:
+
+```bash
 docker-compose down

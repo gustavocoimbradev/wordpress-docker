@@ -1,0 +1,11 @@
+.maintenance {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        font-size: 64px;
+        color: $lightColor;
+    }
+} 

@@ -1,3 +1,9 @@
-body {
-    background: red;
-}
+// Base and utils
+@import 'base/reset';
+@import 'utils/variables';
+
+// Partials
+@import 'partials/maintenance';
+
+// Page templates
+@import 'page-templates/homepage';

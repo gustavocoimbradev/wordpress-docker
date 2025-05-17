@@ -15,9 +15,9 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.1
       with:
         server: ${{ secrets.FTP_HOST }}
-        username: ${{ secrets.FTP_USER }}
+        username: ${{ secrets.FT  _USER }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./wp-content/themes/gustavocoimbra/
         server-dir: ./wordpress/wp-content/themes/gustavocoimbra/
         state-name: .ftp-deploy-sync-themes.json
-        dangerous-clean-slate: false  
+        dangerous-clean-slate: true

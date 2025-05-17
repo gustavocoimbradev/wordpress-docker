@@ -1,4 +1,4 @@
-# 🚀 WP - Gustavo Coimbra
+# 🚀 Wordpress Theme - Gustavo Coimbra
 
 Siga as orientações abaixo para rodar o projeto no seu ambiente.
 

@@ -1,6 +1,3 @@
-Okay, vamos melhorar esse arquivo Markdown para deixá-lo mais claro e apresentável. Vou adicionar uma pequena introdução, usar formatação para destacar os comandos e estruturar melhor as seções.
-Markdown
-
 # 🚀 WP - Gustavo Coimbra
 
 Este repositório contém a configuração para rodar o projeto WordPress localmente utilizando Docker e Docker Compose.
